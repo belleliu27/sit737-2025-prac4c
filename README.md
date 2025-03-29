@@ -12,6 +12,25 @@ The required tools for doing this task are as follows:
 ## Part I: Additional Arithmetic Operations
 Expand the capabilities of the calculator microservice by introducing support for advanced arithmetic operations such as exponentiation, square root, and modulo operations. You need to implement corresponding API endpoints to handle these operations, thereby enriching the functionality of the microservice and providing users with more comprehensive calculation capabilities.
 
+## Setup Instructions
+### 1. Clone the Repository
+```bash
+git clone https://github.com/belleliu27/sit737-2025-prac4c.git
+cd sit737-2025-prac4c
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Run the Microservice
+```bash
+node index.js
+```
+
+The service will start and listen on **port 3000**.
+
 ### Features
 The enhanced calculator now supports the following operations:
 - **Addition**
@@ -102,3 +121,14 @@ These operations can be accessed via the following API endpoints:
   - **num1**: 10
   - **num2**: 3
   - **result**: 1
+
+## Logging with Winston
+The microservice uses **Winston** for logging. Logs are stored in the `logs/` directory:
+
+- `logs/combined.log`: Logs all requests.
+- `logs/error.log`: Logs error messages.
+
+To view logs in real-time:
+```bash
+tail -f logs/combined.log
+```
