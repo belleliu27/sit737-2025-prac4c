@@ -33,6 +33,15 @@ const calculate = (num1, num2, operation) => {
         throw new Error("Cannot divide by zero");
       }
       return num1 / num2;
+    case "exponent":
+      return Math.pow(num1, num2);
+    case "sqrt":
+      if (num1 < 0) {
+        throw new Error("Cannot take the square root of a negative number");
+      }
+      return Math.sqrt(num1);
+    case "mod":
+      return num1 % num2;
     default:
       throw new Error("Invalid operation");
   }
