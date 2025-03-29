@@ -1,4 +1,4 @@
-##Enhanced Functionality for the Calculator Microservice
+## Enhanced Functionality for the Calculator Microservice
 
 ### Overview
 The objective of this task is to expand upon the capabilities of the calculator microservice introduced in task 4.1P. By integrating supplementary features and refining its error handling mechanism, you will enhance your proficiency in microservice development while fortifying your ability to craft resilient and intuitive applications.
